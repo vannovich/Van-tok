@@ -26,7 +26,7 @@ function App() {
           <Route path="/connections" element={<Messages />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/profile:profileId" element={<Profile />} />
+          <Route path="/profile/:profileId" element={<Profile />} />
           <Route path="/create-post" element={<CreatePost />} />
         </Route>
       </Routes>
