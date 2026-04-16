@@ -5,6 +5,7 @@ import Loading from "../components/Loading";
 import UserProfileInfo from "../components/UserProfileInfo";
 import PostCard from "../components/PostCard";
 import moment from "moment";
+import ProfileModal from "../components/ProfileModal";
 // import { Link } from "lucide-react";
 
 function Profile() {
@@ -101,7 +102,7 @@ function Profile() {
         </div>
       </div>
       {/* Edit profile modal */}
-      {showEdit && <p>Show profile eidt</p>}
+      {showEdit && <ProfileModal setShowEdit={setShowEdit}/>}
     </div>
   ) : (
     <Loading />
